@@ -2,6 +2,12 @@
 
 using namespace std;
 
+// Teknik Informatika 1B
+// Tugas Kelompok
+// Arip
+// Taofik
+// Rizky
+
 float hitungKBalok(float p, float l, float t){
   float K = 4 * (p+l+t);
   return K;
@@ -86,11 +92,11 @@ int main() {
         cout <<"=========================================" << endl;
         cout <<"Total Pembelian : Rp." << jumlah*20000 << endl;
         if (jumlah*20000>=500000){
-        	cout <<"Selamat anda mendapatkan diskon 15% " << endl;
+        	cout <<"Selamat anda mendapatkan diskon 15% = Rp. " << jumlah*20000*0.15 << endl;
         	cout << "Total Bayar = Rp. " << (jumlah*20000-(0.15*jumlah*20000)) << endl;
 		}
 		else if (jumlah*20000>=250000){
-        	cout <<"Selamat anda mendapatkan diskon 5% " << endl;
+        	cout <<"Selamat anda mendapatkan diskon 5% = Rp. " <<  jumlah*20000*0.05 << endl;
         	cout << "Total Bayar = Rp. " << (jumlah*20000-(0.05*jumlah*20000)) << endl;
 		}
 		
@@ -107,11 +113,11 @@ int main() {
          cout <<"=========================================" << endl;
          cout <<"Total Pembelian : Rp." << jumlah*15000 << endl;
          if (jumlah*15000>=500000){
-        	cout <<"Selamat anda mendapatkan diskon 15% " << endl;
+        	cout <<"Selamat anda mendapatkan diskon 15% = Rp. " << jumlah*15000*0.15 << endl;
         	cout << "Total Bayar = Rp. " << (jumlah*15000-(0.15*jumlah*15000)) << endl;
 		}
 		else if (jumlah*15000>=250000){
-        	cout <<"Selamat anda mendapatkan diskon 5% " << endl;
+        	cout <<"Selamat anda mendapatkan diskon 5% = Rp. " << jumlah*15000*0.05 << endl;
         	cout << "Total Bayar = Rp. " << (jumlah*15000-(0.05*jumlah*15000)) << endl;
 		}
         break;
@@ -127,11 +133,11 @@ int main() {
           cout <<"=========================================" << endl;
           cout <<"Total Pembelian : Rp." << jumlah*10000 << endl;
           if (jumlah*10000>=500000){
-        	cout <<"Selamat anda mendapatkan diskon 15% " << endl;
+        	cout <<"Selamat anda mendapatkan diskon 15% = Rp. " << jumlah*10000*0.15 << endl;
         	cout << "Total Bayar = Rp. " << (jumlah*10000-(0.15*jumlah*10000)) << endl;
 		}
 		else if (jumlah*10000>=250000){
-        	cout <<"Selamat anda mendapatkan diskon 5% " << endl;
+        	cout <<"Selamat anda mendapatkan diskon 5% = Rp. " << jumlah*10000*0.05 << endl;
         	cout << "Total Bayar = Rp. " << (jumlah*10000-(0.05*jumlah*10000)) << endl;
 		}
 		
@@ -191,13 +197,14 @@ int main() {
        case 3:
        	system("color A");
        	system("CLS");
-          cout <<"Menghitung Balok " << endl;
-          cout <<"---------------------------------\n";
+       	  cout <<"**********************************" << endl;
+          cout <<"        Menghitung Balok          " << endl;
+          cout <<"**********************************" << endl;
           cout << "Masukan Panjang : ";
           cin >>p;     
-          cout << "Masukan Luas : ";
+          cout << "Masukan Luas    : ";
           cin >>l;
-          cout << "Masukan Tinggi : ";
+          cout << "Masukan Tinggi  : ";
           cin >>t;
           cout << endl;
           tampilKeliling(p, l, t);
