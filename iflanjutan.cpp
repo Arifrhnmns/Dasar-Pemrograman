@@ -6,7 +6,7 @@ using namespace std;
 // Tugas Kelompok
 // Arip
 // Taofik
-// Rizky
+// Rizky maulana yusuf
 
 float hitungKBalok(float p, float l, float t){
   float K = 4 * (p+l+t);
@@ -49,7 +49,7 @@ void tampilVolume(float p, float l, float t){
   cout <<"V \t= " << p*l*t << endl;
 }
 
-int menu, jumlah, balok;
+int menu, makanan, jumlah, balok;
 float p, l, t;
 float absensi, tugas, uts, uas, nilai_akhir;
 char nilai_huruf;
@@ -75,12 +75,12 @@ int main() {
      	system("CLS");
 	    cout <<"-----Menu makanan-----\n";
 	    cout <<" 1. Nasi Padang\n ";
-	    cout <<"22. Nasi Goreng\n ";
-	    cout <<"33. Nasi Bakar\n ";
+	    cout <<"2. Nasi Goreng\n ";
+	    cout <<"3. Nasi Bakar\n ";
         cout <<"Masukan nomor makanan: ";
-        cin >> menu;
+        cin >> makanan;
 		
-	switch(menu){
+	switch(makanan){
       case 1:
       	system("CLS");
       	cout <<"=========================================" << endl;
@@ -102,7 +102,7 @@ int main() {
 		
         break;
         
-      case 22:
+      case 2:
        	system("CLS");
        	 cout <<"=========================================" << endl;
        	 cout <<"                Pembayaran               " << endl;
@@ -122,7 +122,7 @@ int main() {
 		}
         break;
         
-      case 33:
+      case 3:
        	system("CLS");
        	  cout <<"=========================================" << endl;
       	  cout <<"                Pembayaran               " << endl;
@@ -144,7 +144,7 @@ int main() {
           break;
           
         default:
-          cout <<"Makanan yang anda pilih tidak ada :( " << endl;
+          cout <<"Maaf Makanan yang anda pilih tidak ada :( " << endl;
           break;
     }
 }
@@ -156,7 +156,6 @@ int main() {
 			cout<<"Program Menghitung Nilai Akhir Mahasiswa"<<endl;
 			cout<<"----------------------------------------"<<endl;
 			
-			//Proses input
 			cout<<"Masukan Nilai Absensi : ";
 			cin>>absensi;
 			
@@ -169,7 +168,6 @@ int main() {
 			cout<<"Masukan Nilai UAS     : ";
 			cin>>uas;
 		
-			//Hitung sesuai rumus
 			nilai_akhir = ((absensi*0.1)+(tugas*0.2)+(uts*0.3)+(uas*0.4));
 			
 			if (nilai_akhir>=90){
@@ -184,7 +182,6 @@ int main() {
 				nilai_huruf='E';
 			}
 		
-			//Proses output
 			cout <<"============================" << endl;
 			cout << endl;
 			cout <<"Nilai Akhir : "<< nilai_akhir << endl;
@@ -218,5 +215,5 @@ int main() {
      cin >> kembali;
      system("CLS");
   } while (kembali== 'Y' | kembali== 'y');
-  	cout <<"Program Selesai" << endl;
+  	cout <<"Program Telah Selesai" << endl;
 }
